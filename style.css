@@ -1,0 +1,208 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* should make the text transition cleaner */
+    /* currently is not doing anything */
+    /* overflow: hidden; */
+}
+
+script {
+    font-size: 9em;
+}
+/* elements */
+
+/* classes */
+
+.AboutMe h1{
+    font-size: 5em;
+    text-align: center; 
+    font-style: bold; 
+    text-shadow: color(srgb rgb(24, 97, 73) green blue);
+    /* text-decoration-line: underline; */
+}
+
+.AboutMe {
+    /* background-color: rgba(23, 114, 82, 0.536); */
+}
+
+.AboutMe img {
+    /* display: flexbox;  */
+    width: 20em;
+    height: 20em;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* display: block; */
+    /* display:inline-flexbox;
+    margin-left: auto;
+    margin-right: auto; */
+    
+} 
+
+.buttonGroup {
+    text-align: center; 
+    margin: 0 auto;
+    /* the group was centered, but need to limit the width to prevent it from stretching out to its complete width, making the div uneven */
+    width: 20em; 
+    /* margin-left: auto;
+    margin-right: auto; */
+    background: #fff;
+    display: flex;
+    /* this thing is clutch right here */
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    padding: 15px 32px;
+    background-color: rgba(23, 114, 82, 0);
+    
+}
+
+.buttonCenter {
+    margin: 0;
+    /* this code centers the button, along with the transforming codes */
+    /* position: absolute; */
+    /* top: 50%; */
+    margin-top: 10em;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 20em;
+    background-color: pink;
+    
+}
+
+
+/* makes the li elements inside navbar horizontally displayed */
+
+/* nav bar */
+.navbar li{
+    display: inline-block;
+    margin-left: 0em;
+    margin-right: .5em;
+}
+
+.navbar button {
+    display: inline; 
+    float: right;
+    /* makes the button circular */
+    border-radius: 2em;
+    margin-right: 2em;
+    width: 7em;
+    height: 2em;
+    border: white; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold; 
+
+
+}
+/* removes underline on the link*/
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* greeting */
+
+.greeting h1 {
+    /* want to make this switch between different languages eventually */
+    text-align: center;
+    font-size: 10em;
+    margin-bottom: .2em;
+    padding: 0em;
+    margin-top: 0em;
+
+}
+
+.greeting h2 {
+    text-align: center;
+    font-size: 3em;
+    font-family: garamond;
+}
+
+.greeting p {
+    text-align: center; 
+    font-size: 1.5em;
+    font-family: garamond;
+}
+
+
+/* ids */
+#socialIconResize {
+    /* resize: 10%; */
+    height: 1.5em;
+    width: 1.5em;
+    float: left; 
+}
+
+#noBullets{
+    list-style-type: none;
+}
+
+/* centers the image using margins */
+#avatar {
+    width: 20em;
+    height: 20em;
+    /* background: transparent;
+    background-size: cover; 
+    align-self: center; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* animation testing */
+
+span::before {
+    /* content: "Hello!"; */
+    /* animation: animate infinite 3s;  */
+    /* video stuff */
+    content: "";
+    /* position: absolute;  */ 
+    /* dont do absolute position it doesn't work for me  */
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border-left: 2px solid black; 
+    animation: animate 4s steps(12) infinite; 
+
+    /* animation: animate 5s steps(120) infinite;  */
+}
+@keyframes animate {
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+/* @keyframes animate {
+    0%{
+        opacity: 70%;
+        content: "Hello!";
+        /* opacity: 90%; */
+        /* left: 100%; */
+    /* }
+    50% {
+        content: "Ciao!";
+    }
+    75% {
+        /* opacity: 70%; */
+        /* content: "Hola!"; */
+    /* } */
+/* } */ 
+
+
+
+
+
