@@ -170,26 +170,15 @@ script {
     border-radius: 50%;
 }
 
+/* About Me Page */
 .AboutMeIntro {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    /* justify-content: center; */
+    align-items: center;
+    align-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
-}
-
-.AboutMeIntro h1 {
-    font-size: 7em;
-    padding-left: .5em;
-    /* margin-right: 2em; */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.AboutMeIntro p {
-    font-size: 2em;
-    padding-left: .5em;
-    /* margin-right: 2em; */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 /* crops images to a circle with the center of image centered */
