@@ -16,13 +16,11 @@ script {
 /* classes */
 
 section h1 {
-    font-size: 3em;
+    font-size: 2.7em;
     text-align: center; 
     font-style: bold; 
-    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-    /* text-decoration-line: underline; */
-}
 
+}
 .AboutMe h1{
     /* font-size: 4em; */
     text-align: center; 
@@ -272,23 +270,8 @@ span::before {
     /* } */
 /* } */ 
 
-s
+
 /* my projects */
-
-/* section h1 {
-     /* font-size: 4em; */
-     text-align: center; 
-     font-style: bold; 
-     /* text-decoration-line: underline; */
-} */
-
-.MyProjects h1{
-    /* font-size: 4em; */
-    text-align: center; 
-    font-style: bold; 
-    /* text-decoration-line: underline; */
-}
-
 .box_container {
     display: flex;
     flex-direction: row;
